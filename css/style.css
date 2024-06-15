@@ -1,0 +1,306 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+    font-size: 15pt;
+}
+
+:root{
+  --background-color: #339EF3;
+  --font-size: 15px;
+  --color: #fff;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: var(--background-color);
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  display: flex;
+  z-index: 999;
+  border-bottom: .7px solid rgba(0,0,0, .3);
+
+}
+
+.logo{
+  height: 50px;
+  background-image: url("./workspace/img/logo.png");
+  background-repeat: no-repeat;
+  
+}
+
+.header .navbar__icon {
+  height: 50px;
+ display: block;
+ line-height: 50px;
+ font-size: 1.8rem;
+ padding: 0 20px;
+ color: var(--color)
+}
+
+.navbar__menu{
+  width: 100vh;
+  position: absolute;
+  background-color: var(--background-color);
+  transition-property: all;
+  top:50px;
+  display: none;
+}
+
+.navbar__menu-list{
+  width: 100vh;
+  text-decoration:none;
+  padding: 20px 0 10px 50px;
+}
+
+.navbar__menu-list li{
+  display: block;
+  padding: 0px 0;
+}
+
+.navbar__menu-list li a{
+  text-decoration: none;
+  color: var(--color);
+  opacity: .6;
+  width: 100vh;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+}
+
+.navbar__menu-list li a:hover{
+  opacity: 1;
+}
+
+
+/* 
+content */
+
+.content{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.home{
+ width: 100%;
+}
+
+
+.home img{
+  width: 100%;
+ display: block;
+}
+
+.home__link{
+ position: relative;
+ z-index: 9;
+}
+
+.home__link-list{ 
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  margin: 0 0 50px 45px; 
+}
+
+.home__link-list li a{
+ color: var(--color);
+ display: block;
+ padding: 5px 10px;
+ font-size: 2.5rem;
+}
+
+/* skill */
+
+.skill{
+ width: 100%;
+ padding-top: 50px; 
+}
+
+.name{
+ width: 100%;
+ height: 50px;
+ text-align: center;
+ font-family: 'Qwitcher Grypen', cursive;
+ font-weight: 900;
+ font-size: 3rem;
+ position: relative;
+ padding: 30px 0;
+ margin-bottom: 20px;
+
+}
+
+
+
+.skill__item{
+ width: 400px;
+ margin: 0 auto 20px auto;
+ border: 2px solid yellow; 
+}
+
+.skill__item-name{
+ width: 100%;
+ height: 40px;
+ background-color: rgba(13,59,95, 0.2);
+ line-height:40px;
+ color: var(--color);
+}
+
+.skill__item-name i{
+ color: var(--background-color) ;
+ font-weight: 700;
+ font-size: 1.5rem;
+ margin-right: 5px;
+ line-height: 40px;
+}
+
+.img img{
+  width: 400px;
+}
+
+.skill__list{
+ display: flex;
+ text-align: center;
+ flex-wrap: wrap;
+}
+
+/* Social Network */
+.mxh{
+background-color: rgba(102,102,102, .159);
+width: 100%;
+margin-top: 20px ;
+padding: 1px 0 30px 0;
+}
+
+.mxh__list{
+ display: flex;
+ text-align: center;
+ flex-wrap: wrap;
+ margin: 0 30px;
+}
+
+.mxh__list-item{
+  width: 150px;
+  height: 150px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding:0 20px;
+  margin-bottom: 20px;
+}
+
+.mxh-icon{
+ width: 100%;
+ color: var(--color);
+ font-size: 3rem;
+ text-align: center;
+ padding-top: 16px;
+}
+
+.mxh-name{
+  padding-top: 16px;
+  width: 100%;
+  text-align: center;
+  color: var(--color);
+  font-size: 1.5rem;
+ 
+}
+
+.mxh-name-link{
+ font-size: 1.2rem;
+ opacity: 0.4;
+}
+
+/*inff */
+
+.info{
+  width: 100%;
+  background-color: var(--background-color);
+  
+  padding-bottom: 120px;
+}
+
+.info__lmg{
+  width: 70%;
+  background-color: var(--color);
+  margin:0 auto;
+  border-radius: 20px;
+  margin-top: 90px;
+  position: relative;
+}
+
+.info__list{
+
+margin: 0 20px;
+padding-top: 70px;
+}
+
+.info__list-item{
+ color: rgba(0,0,0, .5);
+ line-height: 40px;
+}
+
+.info__avatar{
+  width: 120px;
+  height: 120px;
+  border: 10px solid var(--color);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top:-70px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.info__list-item-link{
+ color: rgba(0,0,0, .5);
+ line-height: 40px;
+}
+@media (max-width: 719px) {
+ .home__link-list{
+  margin: 0 0 10px; 
+ }
+    
+.home__link-list li a{
+  font-size: 1.4rem;
+}
+
+.skill__item{
+  width: 90%;
+}
+.img img{
+  width: 100%;
+}
+
+.mxh__list-item{
+  padding:0 7px;
+}
+
+.mxh__list{
+  margin:0 5%;
+}
+
+.info__lmg{
+  width: 90%;
+}
+
+}
+
+
+
+
+
+.none{
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: var(--color);
+}
+span{
+  display: block;
+}
